@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { PaperAirplaneIcon, TrashIcon, SunIcon, MoonIcon, Cog6ToothIcon, ArrowPathIcon } from '@heroicons/react/24/outline';
+import { PaperAirplaneIcon, TrashIcon, SunIcon, MoonIcon, Cog6ToothIcon } from '@heroicons/react/24/outline';
 import ReactMarkdown from 'react-markdown';
 
 function App() {
@@ -8,7 +8,7 @@ function App() {
   const [isLoading, setIsLoading] = useState(false);
   const [isDarkMode, setIsDarkMode] = useState(false);
   const [isSidebarOpen, setIsSidebarOpen] = useState(true);
-  const [modelInfo, setModelInfo] = useState({
+  const [modelInfo] = useState({
     name: "HumanGPT",
     version: "1.0.0",
     description: "An advanced AI assistant powered by state-of-the-art language models.",
