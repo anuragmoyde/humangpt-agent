@@ -53,7 +53,7 @@ function App() {
     setIsLoading(true);
 
     try {
-      const response = await fetch('https://insight-chatbot.app.n8n.cloud/webhook/humangpt', {
+      const response = await fetch('http://localhost:5678/webhook/humangpt', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
