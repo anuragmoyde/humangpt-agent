@@ -53,7 +53,7 @@ function App() {
     setIsLoading(true);
 
     try {
-      const response = await fetch('https://n8n-anurag.onrender.com/webhook/humangpt', {
+      const response = await fetch('http://localhost:5678/webhook/humangptt', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
